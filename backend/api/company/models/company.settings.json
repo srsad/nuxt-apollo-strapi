@@ -1,0 +1,95 @@
+{
+  "connection": "default",
+  "collectionName": "companies",
+  "info": {
+    "name": "Company"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 128
+    },
+    "alias": {
+      "type": "string",
+      "maxLength": 64,
+      "minLength": 3
+    },
+    "logo": {
+      "type": "string"
+    },
+    "preview": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "addresses": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "categories": {
+      "type": "string"
+    },
+    "site": {
+      "type": "string"
+    },
+    "legal_address": {
+      "type": "string"
+    },
+    "post_address": {
+      "type": "string"
+    },
+    "inn": {
+      "type": "string"
+    },
+    "kpp": {
+      "type": "string"
+    },
+    "bik": {
+      "type": "string"
+    },
+    "p_c": {
+      "type": "string"
+    },
+    "k_c": {
+      "type": "string"
+    },
+    "okpo": {
+      "type": "string"
+    },
+    "okato": {
+      "type": "string"
+    },
+    "okved": {
+      "type": "string"
+    },
+    "ogrn": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "unique": true
+    },
+    "active": {
+      "type": "boolean",
+      "default": false
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "working_time": {
+      "type": "json",
+      "private": false
+    }
+  }
+}
